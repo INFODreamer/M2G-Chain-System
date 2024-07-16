@@ -1,4 +1,4 @@
-# M2G-Chain-System
+# M2G-Chain-System and DMGC_dataset
 This primarily describes how to build a distributed edge computing environment for an M2G-Chain, where multi-modal generative chains can be implemented.
 
 
@@ -78,3 +78,12 @@ ssh-copy-id -p 39614 (servername)@172.16.10.15
    - Server3 receives the command via `receiving.py`, calls `image2video` to process the file, and sends the generated video file back to MainServer.
 
 Finally, you can view the final generated result and the intermediate results in the corresponding path on the MainServer.
+
+
+
+# DMGC_dataset
+This is the main content of the DMGC_dataset.
+
+
+The dataset is derived from an extension of the EUA_dataset, with its creation involving a dictionary method. The contents of the dataset include: server ID, server geographical longitude, server geographical latitude, server performance evaluation, and model information relevant to server deployment. The dictionary records details about the models, including the number of models, quality of service scores, and service efficiency ratings for each model (note that these scores have not been normalized).
+
