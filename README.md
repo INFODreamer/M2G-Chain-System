@@ -1,5 +1,5 @@
 # M2G-Chain-System and DMGC_dataset
-This primarily describes how to build a distributed edge computing environment for an M2G-Chain, where multi-modal generative chains can be implemented.
+This primarily describes how to set up a distributed edge computing environment for M2G-Chain, where multimodal generation chains can be realized. In addition, we provide detailed elaboration on the pertinent content information of the DMGC_dataset.
 
 
 # Deployment and Implementation Process in Real Scenarios
@@ -82,7 +82,6 @@ Finally, you can view the final generated result and the intermediate results in
 
 
 # DMGC_dataset
-This is the main content of the DMGC_dataset.
 
 
 The dataset is derived from an extension of the EUA_dataset, with its creation involving a dictionary method. The contents of the dataset include: server ID, server geographical longitude, server geographical latitude, server performance evaluation, and model information relevant to server deployment. The dictionary records details about the models, including the number of models, quality of service scores, and service efficiency ratings for each model (note that these scores have not been normalized).
