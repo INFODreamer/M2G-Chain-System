@@ -42,7 +42,7 @@ The `sending.py` file running on the MainServer sends the corresponding CMD comm
 ```bash
 scp -P [Port] [File Path] [Username]@[Target Server IP]:[Target Path]
 # Example:
-scp -P 39614 /data/gaoyan/image2video-synthesis-using-cINNs/results.mp4 gaoyan@172.16.10.15:/data/gaoyan/files
+scp -P 39614 /data/(servername)/image2video-synthesis-using-cINNs/results.mp4 (servername)@172.16.10.15:/data/(servername)/files
 ```
 We have integrated the scp transfer command into the corresponding Python files for the models.
 
@@ -53,7 +53,7 @@ Set up password-free scp for servers that need to transfer files mutually:
 ssh-keygen -t rsa -C "key pass"
 
 # Copy the public key to the target server to enable password-free login
-ssh-copy-id -p 39614 gaoyan@172.16.10.15
+ssh-copy-id -p 39614 (servername)@172.16.10.15
 ```
 ### Example of the Testing Process
 
